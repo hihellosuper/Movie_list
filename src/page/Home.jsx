@@ -28,28 +28,7 @@ useEffect(() => {
     
 
 
-    // const [movis, setMovis] = useState([]);
-    // const [error, seteror] = useState(null);
-    // const [load, setloadng] = useState(true)
-
-    // useEffect(() => {
-    //     const loadpopmovis = async () => {
-    //         try{
-    //             const popmovis = await getmovies();
-    //             setMovis(popmovis);
-    //         } catch (err) {
-    //             console.log(err);
-    //             seteror("Failed to verify");
-    //         }
-    //         finally {
-    //             setloadng (false)
-    //         }
-
-    //         loadpopmovis();
-    //     }
-    // }, []);
-
-    // const movis = getmovies();
+   
 
     const handlserch = async (e) => {
         e.preventDefault()
@@ -59,8 +38,7 @@ useEffect(() => {
         if(loading) return
 
         setLoading(true)
-        // alert(searchQuery)
-        // setSearchQuery(" ")
+        
         try{
           const serchreslt = await searchMovies(searchQuery)
           setMovies(serchreslt)
