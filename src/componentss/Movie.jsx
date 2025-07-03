@@ -14,9 +14,9 @@ function Movie({movi}){
     }
     return <div className="movie-id">
         <div className="movi-poster">
-            <img src={`https://image.tmdb.org/t/p/w500${movi.poster_path}`} alt={movi.title}/>
+            <img src={'https://image.tmdb.org/t/p/w500${movi.poster_path}'} alt={movi.title}/>
             <div className="movie-overlay">
-                <button className={`favorite-btn ${favorit ? "active" : " "}`}  onClick={onFavoriteClick}>
+                <button className={'favorite-btn ${favorit ? "active" : " "}'}  onClick={onFavoriteClick}>
                     ♥
                 </button>
             </div>
